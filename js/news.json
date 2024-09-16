@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Cronograma de Cisco",
+    "description": "Hoy se lanzó una nueva actualización de software revolucionaria.",
+    "date": "2024-09-15",
+    "link": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m08/cisco-announces-august-and-september-events-with-the-financial-community.html",
+    "image": "https://newsroom.cisco.com/c/dam/r/newsroom/en/us/assets/a/y2024/m08/Cisco_Logo_no_TM_Sky_Blue-RGB_1200x675.jpg"
+  },
+  {
+    "title": "Nuevas tendencias en IA",
+    "description": "La inteligencia artificial está cambiando la forma en que trabajamos y vivimos.",
+    "date": "2024-09-14",
+    "link": "https://nextweb.gnoss.com/recurso/las-principales-tendencias-tecnologicas/b99046ad-3034-4248-b833-39ab2cab9ba1",
+    "image": "https://content.gnoss.ws/imagenes/Usuarios/ImagenesCKEditor/5d1dada8-e23b-499e-aa70-66ad03aedbc4/1570479f-f07c-47bd-89df-fbf39a32c729.png"
+  },
+  {
+    "title": "Avances en ciberseguridad",
+    "description": "Nuevas técnicas para proteger los datos en línea.",
+    "date": "2024-09-13",
+    "link": "https://es.linkedin.com/pulse/ciberseguridad-c%C3%B3mo-proteger-tus-datos-y-redes-mr-tips-digital",
+    "image": "https://media.licdn.com/dms/image/v2/D5612AQFnyjxL_7-LCQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1683669033467?e=2147483647&v=beta&t=NHJiMJeQD97PH7I13GaGJ2cF_DNYXqzsFy9FRKTvaKU"
+  },
+  {
+    "title": "Alerta: nueva modalidad de estafa tras el lanzamiento del iPhone 16, ¡no caigas en la trampa!",
+    "description": "El lanzamiento del iPhone 16 ha desatado nuevas estafas que buscan robar dinero e información personal. Los ciberdelincuentes usan enlaces fraudulentos y falsas ofertas de compra anticipada para engañar a las víctimas. Expertos recomiendan precaución y utilizar únicamente los canales oficiales de compra para evitar caer en estas trampas.",
+    "date": "2024-09-12",
+    "link": "https://es.gizmodo.com/alerta-nueva-modalidad-de-estafa-tras-el-lanzamiento-del-iphone-16-no-caigas-en-la-trampa-2000128290",
+    "image": "https://media.es.wired.com/photos/665f599d17fba518d6dd5aa2/16:9/w_1920,c_limit/iphone%2016%20pro%20cornici.png"
+  }
+]
