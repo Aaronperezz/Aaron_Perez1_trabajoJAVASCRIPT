@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newsContainer = document.getElementById("news-container");
 
   // Cargar las noticias desde el archivo JSON
-  fetch("/js/news.json")
+  fetch("js/news.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((news) => {
