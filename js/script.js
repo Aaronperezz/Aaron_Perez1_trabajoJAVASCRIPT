@@ -116,3 +116,35 @@ formulario.addEventListener("reset", function () {
 
 // Inicializar el cálculo
 calcularPresupuesto();
+
+/*
+ *************** seccion contacto mapa *********** */
+
+/*  declaro variables y uso de objetos DirectionsService para calculo de rutas */
+
+function initMap() {
+  // Coordenadas de Calle Andarella 1, Valencia, España
+  const negocioLatLng = { lat: 39.462397, lng: -0.413917 };
+
+  // Inicializa el mapa centrado en la ubicación del negocio
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18, // Ajusta el zoom según lo que prefieras
+    center: negocioLatLng,
+  });
+
+  // Agrega un marcador en la ubicación de tu negocio
+  const marker = new google.maps.Marker({
+    position: negocioLatLng,
+    map: map,
+    title: "Alpha Digital Media",
+  });
+
+  const infoNegocio = new google.maps.InfoWindow({
+    content:
+      "Empresa: <b>Alpha Digital Media</b><br/>\
+                             Teléfono: +34 635 315 985<br/>dirección: calle andarella 1, piso 4, puerta 6",
+  });
+  google.maps.event.addListener(marker, "click", function () {
+    infoNegocio.open(map, marker);
+  });
+}

@@ -28,8 +28,20 @@
 
     <link rel="stylesheet" href="../css/style.css" />
 
+    <!--    llamada a libreria google maps -->
+    <script
+      type="text/JavaScript"
+      src="https://maps.googleapis.com/maps/api/js?key=KEY"
+    ></script>
+
     <!--  Imagen de barra de navegador (favicon) -->
     <link rel="icon" href="../img/logo_transparente_ADM.png" />
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6Xnqvjkn1AORzI9t5fTmSlrOzaKUnmxo&callback=initMap"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -104,78 +116,26 @@
     </nav>
     <main class="pt-5 bg-color">
       <div class="container mb-5">
-        <section class="row">
-          <article class="col-12 text-center">
-            <h1>¿Interesado?</h1>
-            <p class="fs-5">¡Envíame tus comentarios!</p>
-            <p class="fs-5">
-              Para más información, puedes contactarme en
-              <a href="mailto:info@alphadigitalmedia.com"
-                >info@alphadigitalmedia.com</a
-              >
-            </p>
-          </article>
-          <article class="col-12 col-lg-6 order-lg-1">
-            <form action="https://formsubmit.co/your@email.com" method="POST">
-              <div class="mb-3">
-                <label class="form-label" for="name">Nombre:</label>
-                <input
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Tu nombre"
-                  type="text"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="email">Email:</label>
-                <input
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Tu correo"
-                  type="email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="comments">Comentarios:</label>
-                <textarea
-                  rows="5"
-                  class="form-control"
-                  id="comments"
-                  name="comments"
-                  placeholder="Déjanos tus comentatos"
-                  required
-                ></textarea>
-              </div>
-              <div class="mb-3">
-                <input class="btn btn-lg btn-success" type="submit" />
-                <input type="hidden" name="_next" value="#" />
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="Comentario del curso de Bootstrap"
-                />
-              </div>
-            </form>
-          </article>
-          <article class="col-12 col-lg-6">
-            <div class="ratio ratio-16x9">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.997687094412!2d-0.37389918720278253!3d39.44577093600519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60490891d50ae1%3A0xb14092833a28e2b2!2sSky%20Homes!5e0!3m2!1sen!2ses!4v1712235397868!5m2!1sen!2ses"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </article>
-        </section>
+        <h1 class="text-center">Contacto</h1>
+
+   <!-- Sección de contacto -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Datos de Contacto</h2>
+        <p><strong>Nombre del Negocio:</strong> Alpha Digital Media</p>
+        <p><strong>Dirección:</strong> Calle Andarella 1, 46014 Valencia, España</p>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Email:</strong> contacto@alphadigital.com</p>
       </div>
+
+      <!-- Mapa de Google Maps -->
+      <div class="col-md-6">
+        <h2>Ubicación en el Mapa</h2>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  </div>
     </main>
     <footer class="bg-dark p-3">
       <div class="container text-center">
@@ -226,6 +186,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
