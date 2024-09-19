@@ -28,7 +28,7 @@
     />
     <!--   link estilos propios -->
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/galeria.css" />
 
     <!--  Imagen de barra de navegador (favicon) -->
 
@@ -102,10 +102,131 @@
         </div>
       </div>
     </nav>
-    <main class="pt-5 bg-color">
-      <h2>Aqui se insertara una galeria dinamica</h2>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </main>
+    <div class="container">
+      <!-- BARRA DE BUSQUEDA -->
+      <header>
+        <div class="logo">
+          <h1>Fotógrafo e Ilustrador</h1>
+          <p>Antonio Rodríguez</p>
+        </div>
+        <form action="">
+          <input
+            type="text"
+            class="barra-busqueda"
+            id="barra-busqueda"
+            placeholder="Buscar"
+          />
+        </form>
+        <div class="categorias" id="categorias">
+          <a href="#" class="activo">Todos</a>
+          <a href="#">Naturaleza</a>
+          <a href="#">Animales</a>
+          <a href="#">Personas</a>
+          <a href="#">Comida</a>
+        </div>
+      </header>
+
+      <!-- IMAGENES -->
+      <section class="grid" id="grid">
+        <div
+          class="item"
+          data-categoria="animales"
+          data-etiquetas="animales naturaleza gatos blanco felino"
+        >
+          <div class="item-contenido">
+            <img src="img/1.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="personas"
+          data-etiquetas="personas café cafeteria mujer libro"
+        >
+          <div class="item-contenido">
+            <img src="img/2.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="naturaleza"
+          data-etiquetas="naturaleza playa"
+        >
+          <div class="item-contenido">
+            <img src="img/3.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="naturaleza"
+          data-etiquetas="naturaleza rocas cascada"
+        >
+          <div class="item-contenido">
+            <img src="img/5.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="comida"
+          data-etiquetas="comida merengue colores multicolor"
+        >
+          <div class="item-contenido">
+            <img src="img/6.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="comida"
+          data-etiquetas="comida café cafeteria crema"
+        >
+          <div class="item-contenido">
+            <img src="img/4.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="personas"
+          data-etiquetas="personas mujer jardín"
+        >
+          <div class="item-contenido">
+            <img src="img/8.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="naturaleza"
+          data-etiquetas="naturaleza tren"
+        >
+          <div class="item-contenido">
+            <img src="img/9.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="animales"
+          data-etiquetas="animales mural"
+        >
+          <div class="item-contenido">
+            <img src="img/7.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- OVERLAY -->
+      <section class="overlay" id="overlay">
+        <div class="container-img">
+          <button id="btn-cerrar"><i class="bi bi-x-circle"></i></button>
+          <img src="" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <!-- cdn de Muuri -->
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+
+    <!-- link JS -->
+    <script src="../js/galeria.js"></script>
+
     <footer class="bg-dark p-3">
       <div class="container text-center">
         <nav class="d-flex justify-content-evenly">
@@ -155,6 +276,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/galeria.js"></script>
   </body>
 </html>
