@@ -1,11 +1,13 @@
 // **************Seccion noticias *******************//
 
+console.log("noticias cargando");
+
 // Fetch de JSON y renderizado de noticias
 document.addEventListener("DOMContentLoaded", () => {
   const newsContainer = document.getElementById("news-container");
 
   // Cargar las noticias desde el archivo JSON
-  fetch("../news.json")
+  fetch("js/news.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((news) => {
