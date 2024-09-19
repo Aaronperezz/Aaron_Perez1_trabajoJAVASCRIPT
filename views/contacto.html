@@ -28,20 +28,19 @@
 
     <link rel="stylesheet" href="../css/style.css" />
 
-    <!--    llamada a libreria google maps -->
-    <script
-      type="text/JavaScript"
-      src="https://maps.googleapis.com/maps/api/js?key=KEY"
-    ></script>
+    <!-- links css de leaflet y link de css de enrutamiento -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
 
-    <!--  Imagen de barra de navegador (favicon) -->
     <link rel="icon" href="../img/logo_transparente_ADM.png" />
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
-      async
-      defer
-    ></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -116,26 +115,28 @@
     </nav>
     <main class="pt-5 bg-color">
       <div class="container mb-5">
-        <h1 class="text-center">Contacto</h1>
+        <h1 class="text-center">Pagina de contacto</h1>
 
-   <!-- Sección de contacto -->
-    <div class="row pt-5">
-      <div class="col-md-6">
-        <h2>Datos de Contacto</h2>
-        <p><strong>Nombre del Negocio:</strong> Alpha Digital Media</p>
-        <p><strong>Dirección:</strong> Calle Andarella 1, 46014 Valencia, España</p>
-        <p><strong>Teléfono:</strong> +123 456 7890</p>
-        <p><strong>Email:</strong> contacto@alphadigital.com</p>
-      </div>
+        <!-- Sección de contacto -->
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <h2 class="pb-5">Datos de Contacto</h2>
+            <p><strong>Nombre del Negocio:</strong> Alpha Digital Media</p>
+            <p>
+              <strong>Dirección:</strong> Calle Andarella 1, 46014 Valencia,
+              España
+            </p>
+            <p><strong>Teléfono:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> contacto@alphadigital.com</p>
+          </div>
 
-      <!-- Mapa de Google Maps -->
-      <div class="col-md-6">
-        <h2>Ubicación en el Mapa</h2>
-        <div id="map"></div>
+          <!-- Mapa de Google Maps -->
+          <div class="pt-5">
+            <h2 class="pb-3">Ubicación en el Mapa</h2>
+            <div id="map"></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </div>
     </main>
     <footer class="bg-dark p-3">
       <div class="container text-center">
@@ -186,6 +187,11 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/script.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Plugin de Leaflet para el enrutamiento -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <script src="../js/contacto.js"></script>
   </body>
 </html>

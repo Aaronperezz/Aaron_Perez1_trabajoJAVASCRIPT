@@ -1,33 +1,3 @@
-// **************Seccion noticias *******************//
-
-// Fetch de JSON y renderizado de noticias
-document.addEventListener("DOMContentLoaded", () => {
-  const newsContainer = document.getElementById("news-container");
-
-  // Cargar las noticias desde el archivo JSON
-  fetch("js/news.json")
-    .then((response) => response.json())
-    .then((data) => {
-      data.forEach((news) => {
-        const newsItem = document.createElement("div");
-        newsItem.classList.add("news-item");
-
-        newsItem.innerHTML = `
-        <img src="${news.image}" alt="${news.title}" class="news-image"/>
-          <h3>${news.title}</h3>
-          <p>${news.description}</p>
-          <span>${news.date}</span>
-          <a href="${news.link}" target="_blank">Leer más</a>
-        `;
-
-        newsContainer.appendChild(newsItem);
-      });
-    })
-    .catch((error) => {
-      console.error("Error al cargar las noticias:", error);
-    });
-});
-
 // **********validacion de formularios ***********
 
 // Validación de datos de contacto
@@ -116,35 +86,3 @@ formulario.addEventListener("reset", function () {
 
 // Inicializar el cálculo
 calcularPresupuesto();
-
-/*
- *************** seccion contacto mapa *********** */
-
-/*  declaro variables y uso de objetos DirectionsService para calculo de rutas */
-
-function initMap() {
-  // Coordenadas de Calle Andarella 1, Valencia, España
-  const negocioLatLng = { lat: 39.462397, lng: -0.413917 };
-
-  // Inicializa el mapa centrado en la ubicación del negocio
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18, // Ajusta el zoom según lo que prefieras
-    center: negocioLatLng,
-  });
-
-  // Agrega un marcador en la ubicación de tu negocio
-  const marker = new google.maps.Marker({
-    position: negocioLatLng,
-    map: map,
-    title: "Alpha Digital Media",
-  });
-
-  const infoNegocio = new google.maps.InfoWindow({
-    content:
-      "Empresa: <b>Alpha Digital Media</b><br/>\
-                             Teléfono: +34 635 315 985<br/>dirección: calle andarella 1, piso 4, puerta 6",
-  });
-  google.maps.event.addListener(marker, "click", function () {
-    infoNegocio.open(map, marker);
-  });
-}
