@@ -71,17 +71,17 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="sitios.html#ultimos-proyectos"
+                  <a class="dropdown-item" href="galeria.html#proyectos"
                     >Últimos Proyectos</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="sitios.html#single-page"
+                  <a class="dropdown-item" href="galeria.html#singlepage"
                     >Sitio <i>Single Page</i></a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="sitios.html#multi-page"
+                  <a class="dropdown-item" href="galeria.html#multipage"
                     >Sitio <i>Multi Page</i></a
                   >
                 </li>
@@ -107,7 +107,6 @@
       <header>
         <div class="logo">
           <h1>Alpha Digital Media</h1>
-          <h3>Galeria</h3>
         </div>
         <form action="">
           <input
@@ -119,10 +118,10 @@
         </form>
         <div class="categorias" id="categorias">
           <a href="#" class="activo">Todos</a>
-          <a href="#">Naturaleza</a>
-          <a href="#">Animales</a>
-          <a href="#">Personas</a>
-          <a href="#">Comida</a>
+          <a id="proyectos" href="#">Proyectos</a>
+          <a id="singlepage" href="#">singlepage</a>
+          <a id="multipage" href="#">multipages</a>
+          <a href="#">Clientes</a>
         </div>
       </header>
 
@@ -130,83 +129,112 @@
       <section class="grid" id="grid">
         <div
           class="item"
-          data-categoria="animales"
-          data-etiquetas="animales naturaleza gatos blanco felino"
+          data-categoria="proyectos"
+          data-etiquetas="Proyecto de plataforma para empresas"
         >
           <div class="item-contenido">
-            <img src="img/1.jpg" alt="" />
+            <img
+              src="../img/proyecto-1.jpg"
+              alt="plataforma web para empresas"
+            />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="personas"
-          data-etiquetas="personas café cafeteria mujer libro"
+          data-categoria="proyectos"
+          data-etiquetas="Proyecto reslizado tipo blog de entrenador personal"
         >
           <div class="item-contenido">
-            <img src="img/2.jpg" alt="" />
+            <img src="../img/proyecto_2.jpg" alt="web entrenador personal" />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="naturaleza"
-          data-etiquetas="naturaleza playa"
+          data-categoria="proyectos"
+          data-etiquetas="Proyecto tienda online stick walker hand made  "
         >
           <div class="item-contenido">
-            <img src="img/3.jpg" alt="" />
+            <img src="../img/proyecto-3.jpg" alt="tienda online" />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="naturaleza"
-          data-etiquetas="naturaleza rocas cascada"
+          data-categoria="proyectos"
+          data-etiquetas="Proyecto web para tienda fisica estetica"
         >
           <div class="item-contenido">
-            <img src="img/5.jpg" alt="" />
+            <img src="../img/proyecto_4.jpg" alt="web para tienda estetica" />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="comida"
-          data-etiquetas="comida merengue colores multicolor"
+          data-categoria="clientes"
+          data-etiquetas="Cristian O'brian cliente satisfecho"
         >
           <div class="item-contenido">
-            <img src="img/6.jpg" alt="" />
+            <img src="../img/clients-4.jpg" alt="cliente satisfecho" />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="comida"
-          data-etiquetas="comida café cafeteria crema"
+          data-categoria="singlepage"
+          data-etiquetas="Sitios web site-singlepage"
         >
           <div class="item-contenido">
-            <img src="img/4.jpg" alt="" />
+            <img
+              src="../img/site-singlepage.jpg"
+              alt="un sitio web singlepage"
+            />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="personas"
-          data-etiquetas="personas mujer jardín"
+          data-categoria="clientes"
+          data-etiquetas="CEO satisfecho por nuestros servicios prestados"
         >
           <div class="item-contenido">
-            <img src="img/8.jpg" alt="" />
+            <img
+              src="../img/clients-5.jpg"
+              alt="empresario satisfecho por nuestro trabajo"
+            />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="naturaleza"
+          data-categoria="multipages"
           data-etiquetas="naturaleza tren"
         >
           <div class="item-contenido">
-            <img src="img/9.jpg" alt="" />
+            <img src="../img/site-multipage.jpg" alt="" />
           </div>
         </div>
         <div
           class="item"
-          data-categoria="animales"
-          data-etiquetas="animales mural"
+          data-categoria="proyectos"
+          data-etiquetas="Proyecto de lanzamiento de una app para apple"
         >
           <div class="item-contenido">
-            <img src="img/7.jpg" alt="" />
+            <img src="../img/proyecto-5.jpg" alt="web para una app apple" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="clientes"
+          data-etiquetas="cliente contento"
+        >
+          <div class="item-contenido">
+            <img src="../img/clients-7.jpg" alt="cliente compartiendo ideas" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="singlepage"
+          data-etiquetas="Proyecto para restaurante menu, sitio one page"
+        >
+          <div class="item-contenido">
+            <img src="../img/menu_singlepage.jpg" alt="menu restaurante" />
           </div>
         </div>
       </section>
@@ -215,7 +243,10 @@
       <section class="overlay" id="overlay">
         <div class="container-img">
           <button id="btn-cerrar"><i class="bi bi-x-circle"></i></button>
-          <img src="" alt="" />
+          <img
+            src="../img/logo_transparente_ADM.png"
+            alt="Alpha Digital Media"
+          />
         </div>
       </section>
     </div>
@@ -223,9 +254,6 @@
     <!-- cdn de Muuri -->
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-
-    <!-- link JS -->
-    <script src="../js/galeria.js"></script>
 
     <footer class="bg-dark p-3">
       <div class="container text-center">
