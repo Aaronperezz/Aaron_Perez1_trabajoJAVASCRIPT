@@ -92,7 +92,7 @@ a:hover {
   background-color: var(--second-alpha-color);
 }
 
-.bg-gradient-blue-green {
+.bg-gradient-blue {
   background-color: rgba(59.6, 58, 72.5);
   background-image: linear-gradient(
     135deg,
@@ -136,7 +136,7 @@ header .logo {
 header p {
   font-weight: 800;
   margin-top: 10px;
-  color: #9b9b9b;
+  color: rgba(80, 158, 227);
 }
 
 header form {
@@ -171,7 +171,7 @@ header .categorias {
 }
 
 header .categorias a {
-  color: #9b9b9b;
+  color: rgba(80, 158, 227);
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -236,7 +236,7 @@ header .categorias a.activo {
 }
 
 .overlay img {
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -254,7 +254,7 @@ header .categorias a.activo {
 .container-img {
   position: relative;
   max-width: 600px;
-  width: 100%;
+  width: 80%;
 }
 
 .container-img button {

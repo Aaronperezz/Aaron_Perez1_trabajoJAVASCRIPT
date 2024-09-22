@@ -3,7 +3,7 @@
   --first-color: rgb(80, 158, 227);
   --first-alpha-color: rgba(80, 158, 227, 0.75);
   --second-color: rgb(0, 115, 129);
-  --second-alpha-color: rgba(0, 115, 129, 0.75);
+  --second-alpha-color: rgba(7, 31, 51, 0.75);
   --third-color: rgb(7, 31, 51, 0.97);
   --third-alpha-color: rgba(7, 31, 51, 0.75);
 
@@ -92,20 +92,13 @@ a:hover {
   background-color: var(--second-alpha-color);
 }
 
-.bg-gradient-blue-green {
+.bg-gradient-blue {
   background-color: rgba(59.6, 58, 72.5);
   background-image: linear-gradient(
     135deg,
     rgba(80, 158, 227),
     rgba(7, 31, 51, 0.97) 79%
   );
-}
-
-.bg-hero-image {
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-third-color {
@@ -155,13 +148,13 @@ a:hover {
 
 /* pagina de contacto */
 #map {
-  height: 500px; /* Ajusta la altura del mapa */
+  height: 500px;
   width: 100%;
 }
 
 /* breakpoints */
-/* X-Small devices (portrait phones, less than 576px)
-     No media query for `xs` since this is the default in Bootstrap */
+/* X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap.
 /*  Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }

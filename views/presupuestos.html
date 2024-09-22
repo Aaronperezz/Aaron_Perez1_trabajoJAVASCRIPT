@@ -94,13 +94,13 @@
         </div>
       </div>
     </nav>
-    <main class="py-5 bg-color">
+    <main class="py-5 bg-gradient-blue">
       <div class="container">
-        <article class="text-center">
+        <article class="text-center text-white">
           <h1>Comencemos tu nuevo proyecto</h1>
           <div class="container">
             <img
-              src="../img/logo_fondo_blanco_ADM.jpg"
+              src="../img/logo_transparente_ADM.png"
               class="img-fluid"
               alt="Alpha Digital Media Logo"
             />
@@ -117,13 +117,13 @@
           <p class="text-start">
             Me parece importante ofrecer a mis clientes una comprensión clara de
             lo que pueden y deben esperar de mí. Si trabajamos juntos en su
-            sitio web, para ello rellenar este frmulario es clave para hacer un
+            sitio web, para ello rellenar este formulario es clave para hacer un
             primer contacto con una buena base de las ideas que se quieren
             plasmar en tu sitio:
           </p>
         </article>
         <section class="row align-items-lg-center">
-          <article class="col-12 col-lg-12 text-lg-start">
+          <article class="col-12 col-lg-12 text-lg-start text-white">
             <h2>Paso 1</h2>
             <p>
               Rellenar el formulario; y a partir de una idea clara tener ese
@@ -133,10 +133,10 @@
             </p>
           </article>
           <article class="col-12">
-            <h1>Formulario de Presupuesto</h1>
+            <h1 class="text-white text-center">Formulario de Presupuesto</h1>
             <form class="container" id="presupuestoForm">
               <!-- Datos de contacto -->
-              <div class="border border-dark p-4 mb-2">
+              <div class="border border-dark bg-white p-4 mb-2">
                 <h2>Datos de contacto</h2>
 
                 <label for="nombre">Nombre:</label>
@@ -170,11 +170,14 @@
                 <input type="email" id="email" name="email" required />
               </div>
               <!-- Presupuesto -->
-              <div class="border border-dark p-4 mb-2">
+              <div class="border border-dark bg-white p-4 mb-2">
                 <h2>Presupuesto</h2>
 
                 <label for="producto">Producto:</label>
                 <select id="producto" name="producto" required>
+                  <option value="" disabled selected>
+                    Seleccione una opcion
+                  </option>
                   <option value="350">Blog personal - 350€</option>
                   <option value="1500">Web corporativa - 1500€</option>
                   <option value="1300">
@@ -208,9 +211,9 @@
               </div>
 
               <!-- Condiciones y botones -->
-              <div class="border border-dark p-4 mb-5">
+              <div class="border border-dark bg-white p-4 mb-5">
                 <label class=""
-                  >Acepto las condiciones de privacidad
+                  >Acepto las <a href="#">condiciones de privacidad</a>
                   <input type="checkbox" id="condiciones" required />
                 </label>
                 <br />
@@ -220,7 +223,7 @@
             </form>
           </article>
         </section>
-        <section class="row align-items-lg-center">
+        <section class="row align-items-lg-center text-white">
           <article class="col-12 col-lg-6 order-lg-1">
             <h2>Paso 2</h2>
             <h3>Propuesta de Diseño</h3>
@@ -242,7 +245,7 @@
             />
           </article>
         </section>
-        <section class="row align-items-lg-center">
+        <section class="row align-items-lg-center text-white">
           <article class="col-12 col-lg-6 text-lg-end">
             <h2>Paso 3</h2>
             <h3>Fin del Proyecto</h3>
